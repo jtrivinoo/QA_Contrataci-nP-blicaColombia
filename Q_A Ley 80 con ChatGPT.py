@@ -31,6 +31,7 @@ print(dir_root)
 ruta_source = str(p(dir_root) /'Sample_Data'/'For_Modeling'/'procesado_normas.json')
 print(ruta_source)
 
+server = app.server
 # LLamado del archivo csv del normograma.
 Norma=pd.read_json(ruta_source, encoding='utf-8-sig')
 print(Norma.shape)
